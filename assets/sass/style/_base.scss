@@ -1,0 +1,393 @@
+@import "general";
+@import "links";
+
+.container {
+	position: relative;
+	height: 100%;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+
+/* HEADER */
+header {
+	z-index: 10;
+	width: 100%;
+	height: 84%;
+}
+
+/* INTRO */
+header figure {
+	width: 310px;
+	margin: 0 auto;
+	padding: 0;
+}
+header figcaption {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	margin: 0;
+	padding: 0;
+	h1 {
+		font-size: 4.6em;
+		letter-spacing: .0001em;
+		white-space: nowrap;
+		overflow: hidden;
+		padding: 20px 0;
+		width: 100%;
+		border-right: 2px solid $main;
+		-webkit-animation: type 1s steps(9), blink-cursor .5s step-end 4 forwards;
+		-moz-animation: type 1s steps(9), blink-cursor .5s step-end 4 forwards;
+		-o-animation: type 1s steps(9), blink-cursor .5s step-end 4 forwards;
+		animation: type 1s steps(9), blink-cursor .5s step-end 4 forwards;
+		// @include type1 (type, 3s, steps, 12, blink-cursor, .5s, step-end, 4, forwards);
+	}
+	h3{
+		font-weight: $font-light;
+		font-size: 1.2em;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 296px;
+		margin: 0 0 0 10px;
+		border-right: 2px solid $dark;
+		-webkit-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
+		-moz-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
+		-o-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
+		animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
+	}
+
+	// @include keyframe(type) {
+	// 	from { width: 0;}
+	// }
+
+	// @include keyframe(blink-cursor) {
+	// 	from {border-color: $dark;}
+	// 	50% {border-color: $main;}
+	// 	100% {border-color: $dark;}
+	// }
+
+	@-webkit-keyframes type {
+		from { width: 0;}
+	}
+	@-moz-keyframes type {
+		from { width: 0;}
+	}
+	@-o-keyframes type {
+		from { width: 0;}
+	}
+	@keyframes type {
+		from { width: 0;}
+	}
+
+	@-webkit-keyframes blink-cursor {
+		from {border-color: $dark;}
+		50% {border-color: $main;}
+		100% {border-color: $dark;}
+	}
+	@-moz-keyframes blink-cursor {
+		from {border-color: $dark;}
+		50% {border-color: $main;}
+		100% {border-color: $dark;}
+	}
+	@-o-keyframes blink-cursor {
+		from {border-color: $dark;}
+		50% {border-color: $main;}
+		100% {border-color: $dark;}
+	}
+	@keyframes blink-cursor {
+		from {border-color: $dark;}
+		50% {border-color: $main;}
+		100% {border-color: $dark;}
+	}
+
+	@-webkit-keyframes show {
+		0% {opacity: 0;}
+		65% {opacity: 0;}
+		70% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+	@-moz-keyframes show {
+		0% {opacity: 0;}
+		65% {opacity: 0;}
+		70% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+	@-o-keyframes show {
+		0% {opacity: 0;}
+		65% {opacity: 0;}
+		70% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+	@keyframes show {
+		0% {opacity: 0;}
+		65% {opacity: 0;}
+		70% {opacity: 1;}
+		100% {opacity: 1;}
+	}
+
+	@-webkit-keyframes type2{
+		0%{width: 0;}
+		72%{width: 0;}
+		100%{ width: 100; }
+	}
+	@-moz-keyframes type2{
+		0%{width: 0;}
+		72%{width: 0;}
+		100%{ width: 100; }
+	}
+	@-o-keyframes type2{
+		0%{width: 0;}
+		72%{width: 0;}
+		100%{ width: 100; }
+	}
+	@keyframes type2{
+		0%{width: 0;}
+		72%{width: 0;}
+		100%{ width: 100; }
+	}
+
+	@-webkit-keyframes blink-cursor2 {
+		from {border-color: $dark;}
+		72% {border-color: $dark;}
+		73% {border-color: $main;}
+		100% {border-color: $main;}
+	}
+	@-moz-keyframes blink-cursor2 {
+		from {border-color: $dark;}
+		72% {border-color: $dark;}
+		73% {border-color: $main;}
+		100% {border-color: $main;}
+	}
+	@-o-keyframes blink-cursor2 {
+		from {border-color: $dark;}
+		72% {border-color: $dark;}
+		73% {border-color: $main;}
+		100% {border-color: $main;}
+	}
+	@keyframes blink-cursor2 {
+		from {border-color: $dark;}
+		72% {border-color: $dark;}
+		73% {border-color: $main;}
+		100% {border-color: $main;}
+	}
+}
+
+/* PROJECT SECTION */
+.projects {
+	width: 100%;
+
+	h2 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	@include laptop() {
+		position: relative;
+	}
+}
+.works {
+	width: 100%;
+	@include box-sizing(border-box);
+
+	@include tablet() {
+		padding: 0 1%;
+	}
+}
+.column {
+	@include box-sizing(border-box);
+	width: 96%;
+	margin: 2%;
+	padding: 0;
+	text-align: center;
+	transition: width 1s;
+
+	@include tablet() {
+		width: 48%;
+		height: auto;
+		float: left;
+		margin: 1%;
+		@include transition(width, .6s);
+	}
+
+	@include laptop() {
+		width: 31.33%;
+		position: relative;
+		overflow: hidden;
+		@include transition(width, .6s);
+	}
+
+	h3 {
+		margin-top: 18px;
+		margin-bottom: 0;
+
+		@include laptop() {
+			position: absolute;
+			margin-top: 30%;
+			width: 100%;
+			text-align: center;
+			color: $offwhite;
+			letter-spacing: .02em;
+			opacity: 0;
+			@include translate3d(-180%,0,0);
+			@include slide-transition(transform, .35s, ease, 1s);
+		}
+	}
+
+	p {
+		margin-top: 4px;
+
+		@include laptop() {
+			position: absolute;
+			margin-top: 37%;
+			width: 100%;
+			text-align: center;
+			color: $offwhite;
+			letter-spacing: .02em;
+			opacity: 0;
+			@include translate3d(-180%,0,0);
+			@include slide-transition(transform, .35s, ease, 1s);
+		}
+	}
+}
+.column figure {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: table;
+
+	@include laptop() {
+
+
+		&:hover h3 {
+			@include translate3d(0,0,0);
+			opacity: 1;
+			@include slide-transition(transform, .35s, ease-in-out, .8s);
+		}
+
+		&:hover p {
+			@include translate3d(0,0,0);
+			opacity: 1;
+			@include slide-transition(transform, .35s, ease-in-out, .8s);
+		}
+
+		&:hover figcaption {
+			@include translate3d(0,0,0);
+			@include slide-transition(transform, .35s, ease-in-out, .8s);
+		}
+	}
+}
+.column figure img {display: block; width:100%;}
+
+.column figcaption {
+
+	@include laptop() {
+		display: table-caption;
+		caption-side: bottom;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		background-color: $main;
+		background-color: rgba($main,.8);
+		@include translate3d(100%,0,0);
+		@include slide-transition(transform, .35s, ease-in-out, 1s);
+	}
+}
+
+/* ABOUT SECTION */
+.about {
+	width: 100%;
+	margin-bottom: 0;
+	background-color: #fff;
+	h2 {
+		width: 100%;
+		padding-bottom: 30px;
+		padding-bottom: 1.88em;
+		text-align: center;
+		// SCREEN MIN-WIDTH 600px
+		@include tablet() {
+			padding: 10px 0 0;
+			padding: .4em 0 0;
+			width: 50%;
+			float: right;
+		}
+		// SCREEN MIN-WIDTH 1280px
+		@include laptop() {
+			padding-top: 20px;
+			padding-top: .82em;
+		}
+	}
+	// SCREEN MIN-WIDTH 600px
+	@include tablet() {
+		position: relative;
+		margin-top: 50px;
+		margin-top: 3.13em;
+		&::after {
+			clear: both;
+			visibility: hidden;
+			content: "";
+			display: block;
+			height: 0;
+		}
+	}
+	// SCREEN MIN-WIDTH 1280px
+	@include laptop() {
+		margin-top: 100px;
+		margin-top: 6.25em;
+	}
+}
+.aboutPhoto {
+	width: 100%;
+	background-image: url('../img/conniet-md.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	img { visibility: hidden; }
+	// SCREEN MIN-WIDTH 600px
+	@include tablet() {
+		background-size: 100% 100% auto;
+		background-position: center center;
+		position: absolute;
+		width: 50%;
+		top: 0;
+		bottom: 0;
+		float: left;
+		margin-right: 0;
+	}
+	// MIN-WDITH 1280px
+	@include laptop() {
+		position: relative;
+		background-image: none;
+		img { visibility: visible; }
+	}
+}
+.aboutMe {
+	width: 96%;
+	padding: 10px 2% 0;
+	padding: .63em 2%;
+	color: $gray;
+	// SCREEN MIN-WIDTH 600px
+	@include tablet() {
+		width: 45%;
+		float: right;
+		padding: 0 2.5%;
+		p {margin: 30px 0 0; margin: 1.88em 0 0;}
+		p:nth-child(2) {margin-bottom: 30px;}
+	}
+	// SCREEN MIN-WIDTH 1280px
+	@include laptop() {
+		margin-top: 50px;
+		margin-top: 3.12em;
+	}
+}
+p + .thanks {
+	@include laptop() {
+		// margin-top: -34px;
+		line-height: 2.2em;
+	}
+}
+@import "footer";

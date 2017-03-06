@@ -1,0 +1,99 @@
+/* GENERAL ELEMENTS*/
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+body {
+	font-family: $site-font;
+	font-weight: $font-light;
+	color: $graywhite;
+	background-color: $dark;
+	font-size: 100%;
+	letter-spacing: .07em;
+}
+
+.container {
+	width: 100%;
+	background-color: $dark;
+	font-size: $font-normal; /* equivalent to 16px */
+	line-height: $line-height;
+}
+
+img {width: 100%;}
+
+.self-clear:before,
+.self-clear:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* SCROLL TO TOP */
+#top-scroll {
+	z-index: 9999;
+	position: fixed;
+	bottom: 8px;
+	bottom: .5em;
+	right: 2%;
+	color: $shade;
+	color: rgba($shade, .8);
+	border: 1px solid $shade;
+	border: .06em solid $shade;
+	border: 1px solid rgba($shade, .8);
+	border: .06em solid rgba($shade, .8);
+	background-color: rgba($offwhite, .5);
+	width: 38px;
+	width: 2.375em;
+	height: 38px;
+	height: 2.375em;
+	@include hover (color, .5s, ease-in-out);
+	@include hover (background-color, .5s, ease-in-out);
+	display: none;
+	&:hover {
+		cursor: pointer;
+		color: $offwhite;
+		background-color: $shade;
+		background-color: rgba($shade, .8);
+		border-color: $shade;
+		border-color: rgba($shade, .8);
+	}
+	&:hover > .up {
+		border-left: 1px solid $offwhite;
+		border-left: .06em solid $offwhite;
+		border-top: 1px solid $offwhite;
+		border-top: .06em solid $offwhite;
+		border-bottom: 0;
+	}
+	// SCREEN MIN-WIDTH 600px
+	@include tablet() {
+		bottom: 26px;
+		bottom: 1.6em;
+	}
+}
+.up {
+	display: block;
+	width: 24px;
+	width: 1.5em;
+	height: 24px;
+	height: 1.5em;
+	width: 16px;
+	height: 16px;
+	border-left: 1px solid $shade;
+	border-left: 1px solid rgba($shade, .6);
+	border-top: 1px solid $shade;
+	border-top: 1px solid rgba($shade, .6);
+	@include hover (border-left, .5s, ease-in-out);
+	@include hover (border-top, .5s, ease-in-out);
+	@include rotate(45deg);
+	margin: 9px auto 0;
+}
+#top-scroll p {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $font-xsmall;
+	margin-top: -12px;
+	margin-top: -.95em;
+}

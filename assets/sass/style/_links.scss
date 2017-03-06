@@ -1,0 +1,72 @@
+// LINKS
+a:hover {
+	cursor: pointer;
+}
+
+// NAVIGATION LINK COLORS
+nav a:active, nav a:visited, nav a:link, nav a:focus {
+	color: $offwhite;
+	text-decoration: none;
+	border-bottom: none;
+	@include hover (color, .5s, ease-in-out);
+}
+nav a:hover {
+	color: $dark;
+}
+.logo {
+	.nav-name {
+		color: $main;
+		@include hover (color, .5s, ease-in-out);
+	}
+	&:hover .nav-name {
+		color: $dark;
+	}
+	.logo-norm {
+		opacity: 1;
+		@include hover (opacity, .5s, ease-in-out);
+	}
+	&:hover .logo-norm {
+		opacity: 0;
+	}
+}
+
+// PROJECTS LINK COLORS
+.projects a:active, .projects a:visited, .projects a:link, .projects a:focus, .view a:active, .view a:visited, .view a:link, .view a:focus {
+	text-decoration: none;
+	color: $shade;
+	@include hover (color, .5s, ease-in-out);
+}
+.project-links {
+	width: 100%;
+	text-align: center;
+}
+
+// PROJECT PAGE LINK COLORS
+.overview, #process {
+	a:active, a:visited, a:link, a:focus {
+		color: $offwhite;
+		text-decoration: none;
+		width: auto;
+		@include hover (color, .5s, ease-in-out);
+
+		&:hover {
+			color: $shade;
+			@include hover (color, .5s, ease-in-out);
+		}
+	}
+}
+
+// FOOTER LINK COLORS
+.contact a:active, .contact a:link, .contact a:focus, .contact a:visited {
+	text-decoration: none;
+	color: $offwhite;
+	padding-bottom: 2px;
+	font-weight: $font-regular;
+	@include hover (color, .5s, ease-in-out);
+}
+.contact a:hover {
+	color: $gray;
+}
+#footer2 a:active, #footer2 a:visited, #footer2 a:link, #footer2 a:focus {
+		text-decoration: none;
+	}

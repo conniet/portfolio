@@ -1,0 +1,170 @@
+// Responsive
+$media-style: min-width;
+@mixin respond-to($breakpoint) {
+	@media only screen and ($media-style: $breakpoint) { @content; }
+}
+
+@mixin phone-l() { @include respond-to($phone-l) { @content; } }
+// @mixin phone-w() { @include respond-to($phone-w) { @content; } }
+@mixin tablet() { @include respond-to($tablet) { @content; } }
+// @mixin tablet-l() { @include respond-to($tablet-l) { @content; } }
+// @mixin tablet-w() { @include respond-to($tablet-w) { @content; } }
+@mixin laptop() { @include respond-to($laptop) { @content; } }
+@mixin desktop() { @include respond-to($desktop) { @content; } }
+@mixin lgscreen() { @include respond-to($lgscreen) { @content; }}
+
+// Border-Box
+@mixin box-sizing ($property) {
+	-webkit-box-sizing: $property;
+	-moz-box-sizing: $property;
+	-o-box-sizing: $property;
+	-ms-box-sizing: $property;
+	box-sizing: $property;
+}
+
+// Transition
+@mixin transition ($property, $duration) {
+	-o-transition: ($property, $duration);
+	transition: ($property, $duration);
+}
+
+// Animation
+@mixin type1 ($animationName, $sec, $steps, $step-amount, $animationName2, $sec2, $steps2, $count, $iteration) {
+	-webkit-animation-name: $animationName;
+	-webkit-animation-duration: $sec;
+	-webkit-animation-function: $steps($step-amount);
+	-webkit-animation-name: $animationName2;
+	-webkit-animation-duration: $sec2;
+	-webkit-animation-function: $steps2 $count;
+	-webkit-animation-fill-mode: $iteration;
+	-moz-animation-name: $animationName;
+	-moz-animation-duration: $sec;
+	-moz-animation-function: $steps($step-amount);
+	-moz-animation-name: $animationName2;
+	-moz-animation-duration: $sec2;
+	-moz-animation-function: $steps2 $count;
+	-moz-animation-fill-mode: $iteration;
+	-o-animation-name: $animationName;
+	-o-animation-duration: $sec;
+	-o-animation-function: $steps($step-amount);
+	-o-animation-name: $animationName2;
+	-o-animation-duration: $sec2;
+	-o-animation-function: $steps2 $count;
+	-o-animation-fill-mode: $iteration;
+	animation-name: $animationName;
+	animation-duration: $sec;
+	animation-function: $steps($step-amount);
+	animation-name: $animationName2;
+	animation-duration: $sec2;
+	animation-function: $steps2 $count;
+	animation-fill-mode: $iteration;
+}
+
+// @mixin type ($animationName, $sec, $steps, $step-amount) {
+// 	-webkit-animation-name: $animationName;
+// 	-webkit-animation-duration: $sec;
+// 	-webkit-animation-function: $steps($step-amount);
+// 	-moz-animation-name: $animationName;
+// 	-moz-animation-duration: $sec;
+// 	-moz-animation-function: $steps($step-amount);
+// 	-o-animation-name: $animationName;
+// 	-o-animation-duration: $sec;
+// 	-o-animation-function: $steps($step-amount);
+// 	animation-name: $animationName;
+// 	animation-duration: $sec;
+// 	animation-function: $steps($step-amount);
+// }
+
+// @mixin blink-cursor ($animationName, $sec, $steps, $count, $iteration) {
+// 	-webkit-animation-name: $animationName;
+// 	-webkit-animation-duration: $sec;
+// 	-webkit-animation-function: $steps $count;
+// 	-webkit-animation-iteration: $iteration;
+// 	-moz-animation-name: $animationName;
+// 	-moz-animation-duration: $sec;
+// 	-moz-animation-function: $steps $count;
+// 	-moz-animation-iteration: $iteration;
+// 	-o-animation-name: $animationName;
+// 	-o-animation-duration: $sec;
+// 	-o-animation-function: $steps $count;
+// 	-o-animation-iteration: $iteration;
+// 	animation-name: $animationName;
+// 	animation-duration: $sec;
+// 	animation-function: $steps $count;
+// 	animation-iteration: $iteration;
+// }
+
+// Anmiation Keyframe
+@mixin keyframe($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName} {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+// Link Hover Effect
+@mixin hover($property, $duration, $timing) {
+	-webkit-transition: $property, $duration, $timing;
+	-moz-transition: $property, $duration, $timing;
+	-o-transition: $property, $duration, $timing;
+	-ms-transition: $property, $duration, $timing;
+	transition: $property, $duration, $timing;
+}
+
+// Scale
+@mixin scale($value) {
+	-webkit-transform: scale($value);
+	-moz-transform: scale($value);
+	-o-transform: scale($value);
+	-ms-transform: scale($value);
+	transform: scale($value);
+}
+
+// Screenshot Hover Effect
+@mixin screen-hover($property, $duration) {
+	-webkit-transition: $property, $duration;
+	-moz-transition: $property, $duration;
+	-o-transition: $property, $duration;
+	-ms-transition: $property, $duration;
+	transition: $property, $duration;
+}
+
+// Slide In Effect
+@mixin slide-transition($property1, $duration1, $timing, $delay) {
+	-webkit-transition: $property1, $duration1, $timing, $delay;
+	-moz-transition: $property1, $duration1, $timing, $delay;
+	-o-transition: $property1, $duration1, $timing, $delay;
+	-ms-transition: $property1, $duration1, $timing, $delay;
+	transition: $property1, $duration1, $timing, $delay;
+}
+@mixin translate3d($tx, $ty, $tz) {
+	-webkit-transform: translate3d($tx, $ty, $tz);
+	-moz-transform: translate3d($tx, $ty, $tz);
+	-o-transform: translate3d($tx, $ty, $tz);
+	-ms-transform: translate3d($tx, $ty, $tz);
+	transform: translate3d($tx, $ty, $tz);
+}
+
+// Box Shadow
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color) {
+	-webkit-box-shadow: $horizontal, $vertical, $blur, $spread, $color;
+	-moz-box-shadow: $horizontal, $vertical, $blur, $spread, $color;
+	box-shadow: $horizontal, $vertical, $blur, $spread, $color;
+}
+
+// Rotate
+@mixin rotate($angle) {
+	-webkit-transform: rotate($angle);
+	-moz-transform: rotate($angle);
+	-o-transform: rotate($angle);
+	-ms-transform: rotate($angle);
+	transform: rotate($angle);
+}

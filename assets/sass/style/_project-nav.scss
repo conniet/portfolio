@@ -1,0 +1,39 @@
+/* PROJECTS PAGE NAVIGATION */
+nav .nav-container > ul {
+	display: inline-block;
+	width: auto;
+	margin: 0 2% -10px 0;
+	padding: 0;
+	@include tablet() {
+		margin: 4px 2% -10px 0;
+	}
+}
+nav .nav-container > ul > a > li {
+	display: inline-block;
+	width: 104px;
+	padding: 2px 0;
+	margin: 0;
+	text-align: right;
+
+	.fa {
+		margin-top: 2px;
+	}
+}
+#previous {
+	margin-right: -20px;
+
+	@include phone-l() {
+		margin-right: 0;
+	}
+}
+nav .nav-container > ul a:nth-child(1) {
+	margin-right: -15px;
+}
+.darker {
+	background-color: $shade-drk;
+	background-color: rgba($shade-drk, .9);
+}
+.lighter {
+	background-color: $shade;
+	background-color: rgba($shade, .5);
+}
