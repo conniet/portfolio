@@ -22,7 +22,7 @@ header {
 
 /* INTRO */
 header figure {
-	width: 360px;
+	width: 320px;
 	margin: 0 auto;
 	padding: 0;
 	// SCREEN MIN-WIDTH 600px
@@ -37,13 +37,13 @@ header figcaption {
 	margin: auto;
 	padding: 0;
 	h1 {
-		font-size: 4em;
+		font-size: 3.35em;
 		letter-spacing: .0001em;
 		white-space: nowrap;
 		overflow: hidden;
 		padding: 20px 0;
-		width: 346px;
-		margin: 43px 7px;
+		width: 308px;
+		margin: 43px 5px;
 		border-right: 2px solid $main;
 		-webkit-animation: show .3s, type 1.3s steps(20), blink-cursor .5s step-end 4 forwards;
 		-moz-animation: show .3s, type 1.3s steps(20), blink-cursor .5s step-end 4 forwards;
@@ -58,11 +58,11 @@ header figcaption {
 	}
 	h3{
 		font-weight: $font-light;
-		font-size: 1.2em;
+		font-size: 1.05em;
 		white-space: nowrap;
 		overflow: hidden;
-		width: 348px;
-		margin: 0 0 0 8px;
+		width: 308px;
+		margin: 0 0 0 6px;
 		border-right: 2px solid $dark;
 		-webkit-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
 		-moz-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
