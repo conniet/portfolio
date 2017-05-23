@@ -10,11 +10,9 @@ $(document).ready(function(){
 			//slow down the effect
 			$('.menu-list').toggle('slow');
 			//give the full opacity background-color
-			$('#main-nav').addClass('dark');
+			$('#main-nav').addClass('darker');
 			//removes class effecting navigation background-color
 			$('#main-nav').removeClass('lighter');
-			//removes class effecting navigation background-color
-			$('#main-nav').removeClass('darker');
 		});
 		$('#projects-link').click(function() {
 			$('.menu-list').hide();
@@ -185,11 +183,6 @@ $(document).ready(function(){
 		$('html,body').animate({
 			scrollTop: $('#home').offset().top
 		}, 500, 'easeInOutQuad');
-		// if($(window).width() <= 600) {
-		// 	$('.menu-list').css({"display":"none"});
-		// } else {
-		// 	$('.menu-list').css({"display":"block"});
-		// }
 	});
 	/*----------------------------------------------
 	  Bottom Project Links
@@ -232,5 +225,11 @@ $(document).ready(function(){
 	// Close the modal by clicking the X
 	$('section').on('click','.exit', function() {
 		modal.addClass('close');
+	});
+	/*----------------------------------------------
+	  History Back Link
+	----------------------------------------------*/
+	$('#back').on('click', function() {
+		history.back(-1);
 	});
 });
