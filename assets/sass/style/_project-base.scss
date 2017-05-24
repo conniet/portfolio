@@ -5,12 +5,15 @@
 h2 {
 	width: 100%;
 	text-align: center;
+	font-size: 2em;
+	line-height: 1.2em;
 
 	@include tablet() {
 		margin: 40px auto;
 	}
 }
 h3 {
+	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -18,10 +21,10 @@ h3 {
 header {
 	width: 100%;
 	max-width: 1210px;
-	margin: 0 auto 20%;
+	margin: 0 auto 15%;
 
 	@include laptop() {
-		margin-bottom: 80px;
+		margin-bottom: 120px;
 	}
 }
 /* PROJECT INFORMATION */
@@ -49,7 +52,6 @@ header {
 		font-style: italic;
 		font-size: 1.3em;
 		line-height: 2em;
-
 	}
 
 	@include tablet() {
@@ -160,7 +162,6 @@ header {
 	width: 100%;
 	padding: 0 2%;
 	margin-bottom: 120px;
-	// margin-top: 80px;
 
 	@include laptop() {
 		max-width: 1600px;
@@ -168,15 +169,15 @@ header {
 	}
 }
 .memories-overview {
-	margin-top: 86%;
+	margin-top: 10%;
 	padding: 0 2%;
 
 	@include tablet() {
-		margin-top: 30%;
+		margin-top: 15%;
 	}
 
 	@include laptop() {
-		margin-top: 250px;
+		margin-top: 290px;
 	}
 }
 .project-info {
@@ -208,26 +209,6 @@ header {
 	border-bottom: 1px solid $graywhite;
 	margin-right: 4px;
 }
-// .view {
-// 	width: 200px;
-// 	background-color: $shade;
-// 	padding: 16px 26px;
-// 	margin: 30px auto;
-// 	text-align: center;
-// 	clear: both;
-// 	@include hover (color, .5s, ease-in-out);
-
-// 	&:hover .view {
-// 		background-color: $offwhite;
-// 		@include hover (color, .5s, ease-in-out);
-// 	}
-
-// 	@include tablet() {
-// 		// float: left;
-// 		width: 25%;
-// 		margin: 30px auto 8%;
-// 	}
-// }
 .overview .view-container {
 	margin-top: 100px;
 }
@@ -235,7 +216,6 @@ header {
 	position: relative;
 	width: 200px;
 	background-color: $shade;
-	// padding: 16px 26px;
 	padding: 29px 10%;
 	margin: 30px auto 40px;
 	text-align: center;
@@ -248,7 +228,6 @@ header {
 	}
 
 	@include tablet() {
-		// float: left;
 		width: 25%;
 		margin: 30px auto;
 		padding: 29px 6%;
@@ -281,7 +260,6 @@ header {
 	}
 
 	@include tablet() {
-		// float: left;
 		width: 25%;
 		margin: 30px auto 50px;
 	}
@@ -345,12 +323,8 @@ header {
 	@include box-sizing(border-box);
 	width: 100%;
 	padding: 0 2%;
-
-	@include laptop() {
-
-	}
 }
-#process .process-img {
+#process .process-img-color {
 	width: 100%;
 	max-width: 600px;
 	margin: 48px auto;
@@ -369,15 +343,46 @@ header {
 		padding: 0;
 	}
 
+	figcaption p {
+		text-align: center;
+	}
+
 	@include tablet() {
 		&:last-child {
 			display: none;
 		}
 	}
 }
+#process .process-img {
+	width: 100%;
+	max-width: 1000px;
+	margin: 48px auto;
+
+	figure {
+		margin: 8% auto;
+		padding: 0;
+
+		&:last-child {
+			margin-bottom: 24px;
+		}
+	}
+
+	figcaption {
+		margin: 0 auto 40px;
+		padding: 0;
+	}
+
+	figcaption p {
+		text-align: center;
+	}
+}
 #process .process-img-even {
+	h3 {flex-basis: 100%;}
+	figure {
+		margin: auto;
+	}
 	@include tablet () {
-		margin: 80px auto 0;
+		margin: 48px auto 0;
 		width: 100%;
 		max-width: 800px;
 		display: -webkit-box;
@@ -396,28 +401,31 @@ header {
 		align-content: space-around;
 	}
 	@include laptop() {
-		margin: 80px auto 0;
-		width: 800px;
+		// margin: 48px auto 0;
+		margin: 48px auto;
+		width: 1000px;
 		max-width: 1300px;
 	}
 }
 #process .process-img-even figure {
 	@include tablet() {
 		width: 96%;
-		// max-width: 390px;
-		// flex-grow: 1;
 		-webkit-flex-shrink: 1;
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
 		-webkit-flex-basis: 48%;
 		-ms-flex-basis: 48%;
 		flex-basis: 48%;
-		margin: 48px auto;
+		margin: 20px auto;
+	}
+
+	@include laptop() {
+		margin: 20px auto 0;
 	}
 
 }
 #process .process-img-odd {
-	margin: 80px auto 0;
+	margin: 48px auto 0;
 	display: -webkit-box;
 	display: box;
 	display: -webkit-flex;
@@ -449,6 +457,9 @@ header {
 	-ms-flex-basis: 100%;
 	flex-basis: 100%;
 }
+#process .process-img-even figcaption p, #process .process-img-odd figcaption p {
+	text-align: center;
+}
 #process .process-img-even figcaption, #process .process-img-odd figcaption h3 {
 	margin: 0 auto;
 }
@@ -468,8 +479,8 @@ header {
 		-webkit-flex-basis: 32.5%;
 		-ms-flex-basis: 32.5%;
 		flex-basis: 32.5%;
-		margin: 48px auto;
-		&:last-child {margin-top: 48px;}
+		margin: 20px auto;
+		&:last-child {margin-top: 20px;}
 	}
 
 	@include laptop() {
@@ -529,6 +540,26 @@ header {
 		width: 100%;
 	}
 }
+#process .research {
+	max-width: 1000px;
+	margin: 48px auto;
+
+	.research-topic {
+		color: $main;
+		font-weight: $font-regular;
+		margin: 0;
+	}
+	p {
+		margin-top: 10px;
+	}
+
+	.process-img-even, .process-img-odd {
+		margin-bottom: 40px;
+	}
+	.process-img-even figcaption p {
+		text-align: left;
+	}
+}
 .project-display .mobile-mockup, .project-display .desktop-mockup, .see-img {
 	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
 	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
@@ -545,9 +576,6 @@ header {
 		@include hover (all, .5s, ease-in-out);
 		@include scale(1.1);
 	}
-}
-.view1 {
-	// margin: 0 auto;
 }
 .view2 {
 	&:first-child {
