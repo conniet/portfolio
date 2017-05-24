@@ -32,7 +32,7 @@ img {width: 100%;}
 }
 
 /* SCROLL TO TOP */
-#top-scroll {
+#top-scroll, #scroll-up {
 	z-index: 9999;
 	position: fixed;
 	bottom: 8px;
@@ -90,10 +90,59 @@ img {width: 100%;}
 	@include rotate(45deg);
 	margin: 9px auto 0;
 }
-#top-scroll p {
+#top-scroll p, #scroll-up p {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: $font-xsmall;
 	margin-top: -12px;
 	margin-top: -.95em;
+}
+/* 404 ERROR PAGE*/
+.error {
+	width: 100%;
+	padding: 20px 0;
+	// SCREEN MIN-WIDTH 1280px
+	@include laptop() {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding-top: 120px;
+	}
+	h1 {
+		text-transform: uppercase;
+		font-size: 3em;
+		margin: 10px auto 26px;
+		text-align: center;
+		@include laptop() {
+			float: right;
+			text-align: left;
+			width: 50%;
+			margin-top: 132px;
+		}
+	}
+	figure {
+		width: 90%;
+		// max-width: 400px;
+		margin: 0 auto;
+		// SCREEN MIN-WIDTH 1280px
+		@include laptop() {
+			float: left;
+			display: inline-block;
+			width: 45%;
+			margin-left: 2%;
+		}
+	}
+	figcaption {
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		// SCREEN MIN-WIDTH 1280px
+		@include laptop() {
+			float: left;
+			width: 50%;
+			text-align: left;
+			display: inline-block;
+			margin-left: 3%;
+		}
+	}
 }

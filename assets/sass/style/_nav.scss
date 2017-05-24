@@ -53,6 +53,10 @@ nav {
 	padding: 0 0 .65em 2%;
 	z-index: 9999;
 
+	@include tablet() {
+		max-width: 200px;
+	}
+
 	img {
 		min-width: 30px;
 		max-width: 30px;
@@ -71,6 +75,7 @@ nav {
 
 .nav-name {
 	display: inline-block;
+	visibility: hidden;
 	float: left;
 	marign-top: 40px;
 	margin-left: 36px;
@@ -78,6 +83,21 @@ nav {
 	font-family: $montserrat;
 	letter-spacing: .05em;
 	font-size: 1.2em;
+
+	p {
+		margin: 0 0 0 -9999px;
+		padding: 0;
+
+		@include tablet() {
+			margin: 0;
+		}
+	}
+
+	@include tablet() {
+		display: inline-block;
+		visibility: visible;
+		marign-top: 40px;
+	}
 }
 
 /* MOBILE HAMBURGER */

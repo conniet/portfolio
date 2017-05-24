@@ -70,6 +70,7 @@ header figcaption {
 		animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
 		// SCREEN MIN-WIDTH 600px
 		@include tablet() {
+			font-size: 1.2em;
 			width: 348px;
 			margin: 0 26px 0 27px;
 		}

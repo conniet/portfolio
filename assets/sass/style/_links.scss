@@ -69,4 +69,11 @@ nav a:hover {
 }
 #footer2 a:active, #footer2 a:visited, #footer2 a:link, #footer2 a:focus {
 		text-decoration: none;
-	}
+}
+
+// ERROR PAGE COLORS
+.error a:active, .error a:link, .error a:focus, .error a:visited {
+	text-decoration: none;
+	color: $main;
+	font-weight: $font-bold;
+}
