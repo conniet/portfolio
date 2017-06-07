@@ -25,7 +25,7 @@ header figure {
 	width: 320px;
 	margin: 0 auto;
 	padding: 0;
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 402px;
 	}
@@ -49,7 +49,7 @@ header figcaption {
 		-moz-animation: show .3s, type 1.3s steps(20), blink-cursor .5s step-end 4 forwards;
 		-o-animation: show .3s, type 1.3s steps(20), blink-cursor .5s step-end 4 forwards;
 		animation: show .3s, type 1.3s steps(20), blink-cursor .5s step-end 4 forwards;
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 		@include tablet() {
 			font-size: 4.6em;
 			width: 402px;
@@ -68,7 +68,7 @@ header figcaption {
 		-moz-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
 		-o-animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
 		animation: show 3.5s, type2 3.8s steps(30), blink-cursor .5s step-end infinite;
-		// SCREEN MIN-WIDTH 600px
+		// SCREEN MIN-WIDTH 725px
 		@include tablet() {
 			font-size: 1.2em;
 			width: 348px;
@@ -192,7 +192,7 @@ header figcaption {
 		text-align: center;
 		margin-bottom: 40px;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		position: relative;
 	}
@@ -200,7 +200,7 @@ header figcaption {
 .works {
 	width: 100%;
 	@include box-sizing(border-box);
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		padding: 0 1%;
 	}
@@ -212,7 +212,7 @@ header figcaption {
 	padding: 0;
 	text-align: center;
 	transition: width 1s;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 48%;
 		height: auto;
@@ -220,18 +220,17 @@ header figcaption {
 		margin: 1%;
 		@include transition(width, .6s);
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 31.33%;
 		position: relative;
 		overflow: hidden;
 		@include transition(width, .6s);
 	}
-
 	h3 {
 		margin-top: 18px;
 		margin-bottom: 0;
-
+		// SCREEN MIN-WIDTH 1200px
 		@include laptop() {
 			position: absolute;
 			margin-top: 30%;
@@ -244,10 +243,9 @@ header figcaption {
 			@include slide-transition(transform, .35s, ease, 1s);
 		}
 	}
-
 	p {
 		margin-top: 4px;
-
+		// SCREEN MIN-WIDTH 1200px
 		@include laptop() {
 			position: absolute;
 			margin-top: 37%;
@@ -266,22 +264,18 @@ header figcaption {
 	padding: 0;
 	width: 100%;
 	display: table;
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
-
-
 		&:hover h3 {
 			@include translate3d(0,0,0);
 			opacity: 1;
 			@include slide-transition(transform, .35s, ease-in-out, .8s);
 		}
-
 		&:hover p {
 			@include translate3d(0,0,0);
 			opacity: 1;
 			@include slide-transition(transform, .35s, ease-in-out, .8s);
 		}
-
 		&:hover figcaption {
 			@include translate3d(0,0,0);
 			@include slide-transition(transform, .35s, ease-in-out, .8s);
@@ -289,9 +283,8 @@ header figcaption {
 	}
 }
 .column figure img {display: block; width:100%;}
-
 .column figcaption {
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		display: table-caption;
 		caption-side: bottom;
@@ -316,20 +309,20 @@ header figcaption {
 		padding-bottom: 30px;
 		padding-bottom: 1.88em;
 		text-align: center;
-		// SCREEN MIN-WIDTH 600px
+		// SCREEN MIN-WIDTH 725px
 		@include tablet() {
 			padding: 10px 0 0;
 			padding: .4em 0 0;
 			width: 50%;
 			float: right;
 		}
-		// SCREEN MIN-WIDTH 1280px
+		// SCREEN MIN-WIDTH 1200px
 		@include laptop() {
 			padding-top: 20px;
 			padding-top: .82em;
 		}
 	}
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		position: relative;
 		margin-top: 50px;
@@ -342,7 +335,7 @@ header figcaption {
 			height: 0;
 		}
 	}
-	// SCREEN MIN-WIDTH 1280px
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin-top: 100px;
 		margin-top: 6.25em;
@@ -354,7 +347,7 @@ header figcaption {
 	background-size: cover;
 	background-repeat: no-repeat;
 	img { visibility: hidden; }
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		background-size: 100% 100% auto;
 		background-position: center center;
@@ -365,7 +358,7 @@ header figcaption {
 		float: left;
 		margin-right: 0;
 	}
-	// MIN-WDITH 1280px
+	// MIN-WDITH 1200px
 	@include laptop() {
 		position: relative;
 		background-image: none;
@@ -377,7 +370,7 @@ header figcaption {
 	padding: 10px 2% 0;
 	padding: .63em 2%;
 	color: $gray;
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 45%;
 		float: right;
@@ -385,13 +378,14 @@ header figcaption {
 		p {margin: 30px 0 0; margin: 1.88em 0 0;}
 		p:nth-child(2) {margin-bottom: 30px;}
 	}
-	// SCREEN MIN-WIDTH 1280px
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin-top: 50px;
 		margin-top: 3.12em;
 	}
 }
 p + .thanks {
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		line-height: 2.2em;
 	}

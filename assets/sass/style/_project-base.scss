@@ -7,7 +7,7 @@ h2 {
 	text-align: center;
 	font-size: 2em;
 	line-height: 1.2em;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		margin: 40px auto;
 	}
@@ -22,30 +22,28 @@ header {
 	width: 100%;
 	max-width: 1210px;
 	margin: 0 auto 15%;
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin-bottom: 120px;
 	}
 }
+
 /* PROJECT INFORMATION */
 .project-intro {
 	@include box-sizing(border-box);
 	width: 100%;
 	padding: 110px 2% 0;
 	text-align: center;
-
 	figure {
 		margin: 0 auto;
 		padding: 0;
 		width: 60%;
 		max-width: 300px;
 	}
-
 	figcaption {
 		margin: 20px auto 0 auto;
 		max-width: 510px;
 	}
-
 	figcaption  p{
 		margin: 0;
 		padding: 0;
@@ -53,12 +51,11 @@ header {
 		font-size: 1.3em;
 		line-height: 2em;
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 50%;
 		padding: 170px 1% 0 2%;
 		float: left;
-
 		.gravitate-logo {
 			max-width: 190px;
 		}
@@ -69,14 +66,13 @@ header {
 	@include box-sizing(border-box);
 	width: 100%;
 	padding: 20px 2%;
-
 	figure {
 		width: 100%;
 		max-width: 600px;
 		margin: 0 auto;
 		padding: 0;
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 50%;
 		float: right;
@@ -103,18 +99,16 @@ header {
 .project-display .memories {
 	position: relative;
 	width: 100%;
-	// height: 100%;
 	max-width: 500px;
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		max-width: 568px;
 		max-height: 415px;
 	}
-
 	img {
 		position: absolute;
 		z-index: 10;
 	}
-
 	.vid-container {
 		width: 100%;
 		height: 100%;
@@ -122,7 +116,6 @@ header {
 		max-height: 327px;
 		padding: 3.8% 0 1.8% 0;
 	}
-
 	.vid-container video {
 		width: 100%;
 		height: 80%;
@@ -144,7 +137,6 @@ header {
 			margin-bottom: 10px;
 			height: 0;
 		}
-
 		.vid-container video {
 			position: absolute;
 			top: 4.8%;
@@ -162,7 +154,7 @@ header {
 	width: 100%;
 	padding: 0 2%;
 	margin-bottom: 120px;
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		max-width: 1600px;
 		margin: 80px auto 120px;
@@ -171,11 +163,11 @@ header {
 .memories-overview {
 	margin-top: 10%;
 	padding: 0 2%;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		margin-top: 15%;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin-top: 290px;
 	}
@@ -183,13 +175,13 @@ header {
 .project-info {
 	@include box-sizing(border-box);
 	width: 100%;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 50%;
 		padding: 0 1% 4% 0;
 		float: left;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		padding-left: 20%;
 	}
@@ -197,7 +189,7 @@ header {
 .my-role {
 	@include box-sizing(border-box);
 	width: 100%;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 50%;
 		padding: 0 0 4% 1%;
@@ -221,18 +213,17 @@ header {
 	text-align: center;
 	clear: both;
 	@include hover (color, .5s, ease-in-out);
-
 	&:hover {
 		background-color: $offwhite;
 		@include hover (color, .5s, ease-in-out);
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 25%;
 		margin: 30px auto;
 		padding: 29px 6%;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		padding: 29px 1.7%;
 	}
@@ -253,12 +244,11 @@ header {
 	text-align: center;
 	clear: both;
 	@include hover (color, .5s, ease-in-out);
-
 	&:hover {
 		background-color: $offwhite;
 		@include hover (color, .5s, ease-in-out);
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 25%;
 		margin: 30px auto 50px;
@@ -269,7 +259,7 @@ header {
 	text-align: center;
 	float: left;
 	width: 100%;
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin: -70px auto 30px;
 	}
@@ -278,7 +268,7 @@ header {
 	@include box-sizing(border-box);
 	width: 100%;
 	margin: 0 auto;
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		max-width: 1020px;
 	}
@@ -288,11 +278,11 @@ header {
 	width: 100%;
 	height: auto;
 	padding: 20px 2%;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		padding: 20px 10%;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		padding: 20px 15%;
 	}
@@ -328,25 +318,21 @@ header {
 	width: 100%;
 	max-width: 600px;
 	margin: 48px auto;
-
 	figure {
 		margin: 8%;
 		padding: 0;
-
 		&:last-child {
 			margin-bottom: 24px;
 		}
 	}
-
 	figcaption {
 		margin: 0 auto 40px;
 		padding: 0;
 	}
-
 	figcaption p {
 		text-align: center;
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		&:last-child {
 			display: none;
@@ -357,21 +343,17 @@ header {
 	width: 100%;
 	max-width: 1000px;
 	margin: 48px auto;
-
 	figure {
 		margin: 8% auto;
 		padding: 0;
-
 		&:last-child {
 			margin-bottom: 24px;
 		}
 	}
-
 	figcaption {
 		margin: 0 auto 40px;
 		padding: 0;
 	}
-
 	figcaption p {
 		text-align: center;
 	}
@@ -381,6 +363,7 @@ header {
 	figure {
 		margin: auto;
 	}
+	// SCREEN MIN-WIDTH 725px
 	@include tablet () {
 		margin: 48px auto 0;
 		width: 100%;
@@ -400,14 +383,15 @@ header {
 		-ms-align-content: space-around;
 		align-content: space-around;
 	}
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
-		// margin: 48px auto 0;
 		margin: 48px auto;
 		width: 1000px;
 		max-width: 1300px;
 	}
 }
 #process .process-img-even figure {
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 96%;
 		-webkit-flex-shrink: 1;
@@ -418,11 +402,10 @@ header {
 		flex-basis: 48%;
 		margin: 20px auto;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin: 20px auto 0;
 	}
-
 }
 #process .process-img-odd {
 	margin: 48px auto 0;
@@ -441,11 +424,11 @@ header {
 	-ms-align-content: space-around;
 	align-content: space-around;
 	width: 88%;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 100%;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 1200px;
 		max-width: 1300px;
@@ -473,7 +456,7 @@ header {
 	flex-basis: 46%;
 	margin: 0 auto;
 	&:last-child {margin-top: 10px;}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		max-width: 96%;
 		-webkit-flex-basis: 32.5%;
@@ -482,7 +465,7 @@ header {
 		margin: 20px auto;
 		&:last-child {margin-top: 20px;}
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		max-width: 390px;
 		-webkit-flex-basis: 50%;
@@ -493,13 +476,13 @@ header {
 #process .view-container {
 	margin: 0 auto 8%;
 	width: 100%;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		position: relative;
 		margin-bottom: 5%;
 		width: 100%;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 70%;
 		max-width: 900px;
@@ -513,29 +496,25 @@ header {
 	margin: 30px auto 40px;
 	text-align: center;
 	@include hover (color, .5s, ease-in-out);
-
 	&:hover {
 		background-color: $offwhite;
 		@include hover (color, .5s, ease-in-out);
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		margin: 0 auto;
 		padding: 29px 6%;
-
 		&:first-child {
 			width: 20%;
 		}
-
 		&:nth-child(2) {
 			width: 20%;
 		}
-
 		&:nth-child(3) {
 			width: 20%;
 		}
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 100%;
 	}
@@ -543,7 +522,6 @@ header {
 #process .research {
 	max-width: 1000px;
 	margin: 48px auto;
-
 	.research-topic {
 		color: $main;
 		font-weight: $font-regular;
@@ -552,7 +530,6 @@ header {
 	p {
 		margin-top: 10px;
 	}
-
 	.process-img-even, .process-img-odd {
 		margin-bottom: 40px;
 	}
@@ -626,7 +603,7 @@ header {
 		background-color: $offwhite;
 		@include hover (color, .5s, ease-in-out);
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		width: 25%;
 		margin: 30px auto 50px;
@@ -637,13 +614,13 @@ header {
 	text-align: center;
 	float: left;
 	width: 100%;
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin: -70px auto 30px;
 	}
 }
 
-/* Image Modal */
+/* IMAGE MODAL */
 .modal {
 	display: block;
 	position: fixed;
@@ -669,11 +646,11 @@ header {
 	margin-top: 30%;
 	padding-bottom: 20px;
 	display: block;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		margin-top: 17%;
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		margin-top: 8%;
 		width: auto;
@@ -682,7 +659,7 @@ header {
 	}
 }
 
-/* Exit Button */
+/* EXIT BUTTON */
 .exit {
 	position: absolute;
 	top: 60px;
@@ -694,7 +671,7 @@ header {
 	text-decoration: none;
 	cursor: pointer;
 }
- /* Animate Modal */
+ /* ANIMATE MODAL */
  .open {
  	opacity: 1;
  	transition: opacity .3s ease-in-out;
@@ -706,12 +683,11 @@ header {
  	transition: all .3s ease-in-out;
  }
 
-/* Footer Navigation */
+/* FOOTER NAVIGATION */
 #footer2 {
 	height: 150px;
 	position: relative;
 	overflow: hidden;
-
 	.pre {
 		position: absolute;
 		top: 0;
@@ -723,14 +699,12 @@ header {
 		background-color: $shade;
 		@include hover (color, .5s, ease-in-out);
 		@include hover (background-color, .5s, ease-in-out);
-
 		&:hover {
 			color: $main;
 			background-color: $gray;
 			@include hover (color, .5s, ease-in-out);
 			@include hover (background-color, .5s, ease-in-out);
 		}
-
 		p {
 			position: absolute;
 			margin: 0 0 0 7%;
@@ -747,19 +721,16 @@ header {
 		color: $offwhite;
 		background-color: $dark;
 		@include hover (color, .5s, ease-in-out);
-
 		&:hover {
 			color: $dark;
 			@include hover (color, .5s, ease-in-out);
 		}
-
 		p {
 			position: absolute;
 			top: 0;
 			right: 0;
 			margin: 0 3% 0 0;
 			padding: 60px 0;
-
 		}
 	}
 }
@@ -769,12 +740,11 @@ header {
 	width: auto;
 	overflow: hidden;
 	@include hover (color, .5s, ease-in-out);
-
 	&:hover {
 		opacity: .7;
 		@include hover (color, .5s, ease-in-out);
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 105%;
 	}

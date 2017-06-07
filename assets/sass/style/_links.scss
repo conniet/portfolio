@@ -1,9 +1,9 @@
-// LINKS
+/* LINKS */
 a:hover {
 	cursor: pointer;
 }
 
-// NAVIGATION LINK COLORS
+/* NAVIGATION LINK COLORS */
 nav a:active, nav a:visited, nav a:link, nav a:focus {
 	color: $offwhite;
 	text-decoration: none;
@@ -30,7 +30,7 @@ nav a:hover {
 	}
 }
 
-// PROJECTS LINK COLORS
+/* PROJECTS LINK COLORS */
 .projects a:active, .projects a:visited, .projects a:link, .projects a:focus, .view a:active, .view a:visited, .view a:link, .view a:focus {
 	text-decoration: none;
 	color: $shade;
@@ -41,7 +41,7 @@ nav a:hover {
 	text-align: center;
 }
 
-// PROJECT PAGE LINK COLORS
+/* PROJECT PAGE LINK COLORS */
 .overview, #process {
 	a:active, a:visited, a:link, a:focus {
 		color: $offwhite;
@@ -56,7 +56,7 @@ nav a:hover {
 	}
 }
 
-// FOOTER LINK COLORS
+/* FOOTER LINK COLORS */
 .contact a:active, .contact a:link, .contact a:focus, .contact a:visited {
 	text-decoration: none;
 	color: $offwhite;
@@ -71,7 +71,7 @@ nav a:hover {
 		text-decoration: none;
 }
 
-// ERROR PAGE COLORS
+/* ERROR PAGE COLORS */
 .error a:active, .error a:link, .error a:focus, .error a:visited {
 	text-decoration: none;
 	color: $main;

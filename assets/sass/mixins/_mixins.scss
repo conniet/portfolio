@@ -5,10 +5,7 @@ $media-style: min-width;
 }
 
 @mixin phone-l() { @include respond-to($phone-l) { @content; } }
-// @mixin phone-w() { @include respond-to($phone-w) { @content; } }
 @mixin tablet() { @include respond-to($tablet) { @content; } }
-// @mixin tablet-l() { @include respond-to($tablet-l) { @content; } }
-// @mixin tablet-w() { @include respond-to($tablet-w) { @content; } }
 @mixin laptop() { @include respond-to($laptop) { @content; } }
 @mixin desktop() { @include respond-to($desktop) { @content; } }
 @mixin lgscreen() { @include respond-to($lgscreen) { @content; }}
@@ -59,40 +56,6 @@ $media-style: min-width;
 	animation-function: $steps2 $count;
 	animation-fill-mode: $iteration;
 }
-
-// @mixin type ($animationName, $sec, $steps, $step-amount) {
-// 	-webkit-animation-name: $animationName;
-// 	-webkit-animation-duration: $sec;
-// 	-webkit-animation-function: $steps($step-amount);
-// 	-moz-animation-name: $animationName;
-// 	-moz-animation-duration: $sec;
-// 	-moz-animation-function: $steps($step-amount);
-// 	-o-animation-name: $animationName;
-// 	-o-animation-duration: $sec;
-// 	-o-animation-function: $steps($step-amount);
-// 	animation-name: $animationName;
-// 	animation-duration: $sec;
-// 	animation-function: $steps($step-amount);
-// }
-
-// @mixin blink-cursor ($animationName, $sec, $steps, $count, $iteration) {
-// 	-webkit-animation-name: $animationName;
-// 	-webkit-animation-duration: $sec;
-// 	-webkit-animation-function: $steps $count;
-// 	-webkit-animation-iteration: $iteration;
-// 	-moz-animation-name: $animationName;
-// 	-moz-animation-duration: $sec;
-// 	-moz-animation-function: $steps $count;
-// 	-moz-animation-iteration: $iteration;
-// 	-o-animation-name: $animationName;
-// 	-o-animation-duration: $sec;
-// 	-o-animation-function: $steps $count;
-// 	-o-animation-iteration: $iteration;
-// 	animation-name: $animationName;
-// 	animation-duration: $sec;
-// 	animation-function: $steps $count;
-// 	animation-iteration: $iteration;
-// }
 
 // Anmiation Keyframe
 @mixin keyframe($animationName) {

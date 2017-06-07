@@ -11,7 +11,7 @@ nav {
 	// STICKY NAVIGATION
 	position: fixed;
 	top: 0;
-	// SCREEN MIN-WIDTH 1280px
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 100%;
 		.nav-container {
@@ -42,7 +42,6 @@ nav {
 .nav-container {
 	width: 100%;
 	max-height: 65px;
-
 }
 .logo {
 	@include box-sizing(border-box);
@@ -52,27 +51,23 @@ nav {
 	padding: 0 0 1px 2%;
 	padding: 0 0 .65em 2%;
 	z-index: 9999;
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		max-width: 200px;
 	}
-
 	img {
 		min-width: 30px;
 		max-width: 30px;
 		position: absolute;
 		left: 2%;
 	}
-
 	.logo-norm {
 		z-index: 999;
 	}
-
 	.logo-dark {
 		z-index: 10;
 	}
 }
-
 .nav-name {
 	display: inline-block;
 	visibility: hidden;
@@ -83,7 +78,6 @@ nav {
 	font-family: $montserrat;
 	letter-spacing: .05em;
 	font-size: 1.2em;
-
 	p {
 		margin: 0 0 0 -9999px;
 		padding: 0;
@@ -92,7 +86,7 @@ nav {
 			margin: 0;
 		}
 	}
-
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		display: inline-block;
 		visibility: visible;
@@ -109,12 +103,12 @@ nav .nav-container > .fa-bars {
 	color: $offwhite;
 	color: rgba($offwhite, .9);
 	@include transition(margin, 1s);
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		margin: 1% 2% 0 0;
 		@include transition(margin, 1s);
 	}
-
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		display: none !important;
 	}
@@ -127,7 +121,7 @@ nav .nav-container > ul {
 	list-style: none;
 	margin: 0;
 	cursor: pointer;
-	// SCREEN MIN-WIDTH 1280px
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		display: inline-block;
 		width: auto;
@@ -139,7 +133,7 @@ nav .nav-container > ul > a > li {
 	display: none;
 	padding: 14px 30px;
 	padding: .88em 1.88em;
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include laptop() {
 		display: inline-block;
 		width: 100px;

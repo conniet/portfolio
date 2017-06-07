@@ -12,16 +12,13 @@ body {
 	font-size: 100%;
 	letter-spacing: .07em;
 }
-
 .container {
 	width: 100%;
 	background-color: $dark;
 	font-size: $font-normal; /* equivalent to 16px */
 	line-height: $line-height;
 }
-
 img {width: 100%;}
-
 .self-clear:before,
 .self-clear:after {
 	content: "";
@@ -67,7 +64,7 @@ img {width: 100%;}
 		border-top: .06em solid $offwhite;
 		border-bottom: 0;
 	}
-	// SCREEN MIN-WIDTH 600px
+	// SCREEN MIN-WIDTH 725px
 	@include tablet() {
 		bottom: 26px;
 		bottom: 1.6em;
@@ -97,11 +94,12 @@ img {width: 100%;}
 	margin-top: -12px;
 	margin-top: -.95em;
 }
+
 /* 404 ERROR PAGE*/
 .error {
 	width: 100%;
 	padding: 20px 0;
-	// SCREEN MIN-WIDTH 1280px
+	// SCREEN MIN-WIDTH 1200px
 	@include laptop() {
 		width: 70%;
 		max-width: 1000px;
@@ -122,9 +120,8 @@ img {width: 100%;}
 	}
 	figure {
 		width: 90%;
-		// max-width: 400px;
 		margin: 0 auto;
-		// SCREEN MIN-WIDTH 1280px
+		// SCREEN MIN-WIDTH 1200px
 		@include laptop() {
 			float: left;
 			display: inline-block;
@@ -136,7 +133,7 @@ img {width: 100%;}
 		width: 90%;
 		text-align: center;
 		margin: 0 auto;
-		// SCREEN MIN-WIDTH 1280px
+		// SCREEN MIN-WIDTH 1200px
 		@include laptop() {
 			float: left;
 			width: 50%;
