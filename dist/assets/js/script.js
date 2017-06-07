@@ -102,8 +102,8 @@ $(document).ready(function(){
 	/*----------------------------------------------
 	  NAVIGATION -- CHANGE NAVIGATION BAR COLOR
 	----------------------------------------------*/
-	// CHANGE NAV BACKGROUND ON SCROLL FOR MIN-WIDTH 600px
-	if($(window).width() >= 601) {
+	// CHANGE NAV BACKGROUND ON SCROLL FOR MIN-WIDTH 360px
+	if($(window).width() >= 360) {
 		$(window).scroll(function() {
 			if($(window).scrollTop() >= 488) {
 				$('#main-nav').addClass('darker');
@@ -129,7 +129,7 @@ $(document).ready(function(){
 	// CHANGE NAV BACKGROUND ON SCROLL FOR SCREEN MIN-WIDTH 1280px
 	if($(window).width() >= 1280) {
 		$(window).scroll(function() {
-			if($(window).scrollTop() >= 800) {
+			if($(window).scrollTop() >= 600) {
 				$('#main-nav').addClass('darker');
 				$('#main-nav').removeClass('lighter');
 			} else {
@@ -185,7 +185,7 @@ $(document).ready(function(){
 		}, 500, 'easeInOutQuad');
 	});
 	/*----------------------------------------------
-	  Bottom Project Links
+	  BOTTOM PROJECT LINKS
 	----------------------------------------------*/
 	if($(window).width() >= 725){
 		var links = $('#process .view-content').length;
@@ -198,7 +198,7 @@ $(document).ready(function(){
 		}
 	}
 	/*----------------------------------------------
-	  Image Modal
+	  IMAGE MODAL
 	----------------------------------------------*/
 	$('.see-img').on('click', 'a', function(e) {
 		var modal = $('#theModal'),
@@ -227,7 +227,7 @@ $(document).ready(function(){
 		modal.addClass('close');
 	});
 	/*----------------------------------------------
-	  History Back Link
+	  HISTORY BACK LINK
 	----------------------------------------------*/
 	$('#back').on('click', function() {
 		history.back(-1);
